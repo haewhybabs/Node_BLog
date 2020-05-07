@@ -1,0 +1,19 @@
+doctype html
+html
+    head
+        title= NodeBlog
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        .container
+            nav
+                ul
+                    li
+                        a(href='/') Home
+                    li
+                        a(href='/posts/add') Add Post
+                    li
+                        a(href='/categories/add') Add category
+            != messages()
+            block content
+            footer
+                p NodeBlog &copy; 2018
